@@ -1,0 +1,25 @@
+server:
+    port: 8086
+
+spring:
+    application:
+        name: hello-service
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:8080/realms/dh
+
+#spring:
+#    security:
+#        oauth2:
+#            client:
+#                provider:
+#                    keycloak:
+#                        issuer-uri: http://localhost:8080/realms/dh
+#                registration:
+#                    keycloak:
+#                        client-id: backend
+#                        client-secret: WrRx69483NbYKZdmpRtJg10MDwvape50
+#                        redirect-uri: http://localhost:8086/login/oauth2/code/google
+
